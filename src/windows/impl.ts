@@ -12,10 +12,7 @@ function GetWindowsVersion() {
 let window_effect_last_ = 0;
 
 function makeColor(color: Color) {
-    return ((color.R & 0xff) << 24) |
-        ((color.G & 0xff) << 16) |
-        ((color.B & 0xff) << 8) |
-        (color.A & 0xff);
+    return new Uint32Array(new Uint8Array([color.R, color.G, color.B, color.A]).buffer)[0];
 }
 
 export function setEffect(hwnd: number, effect: number, dark: boolean, color: Color) {
