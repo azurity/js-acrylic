@@ -1,0 +1,26 @@
+{
+  "name": "@azurity/acrylic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "npm run build && node dist/index.js",
+    "build": "tsc -p . --outDir dist/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "azurity <784227594@qq.com>",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/azurity/js-acrylic.git"
+  },
+  "homepage": "http://github.com/azurity/js-acrylic#readme",
+  "license": "MIT",
+  "dependencies": {
+    "ffi-napi": "^4.0.3"
+  },
+  "devDependencies": {
+    "@types/ffi-napi": "^4.0.5",
+    "typescript": "^4.7.4"
+  }
+}
